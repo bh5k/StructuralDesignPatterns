@@ -7,8 +7,7 @@ import java.sql.Statement;
 
 public class BridgeEverydayDemo {
 
-	public static void main(String args[]) {
-
+	public static void main(String [] args) {
 		try {
 			//JDBC is an API
 			DriverManager.registerDriver(new org.h2.Driver()); // <- Driver
@@ -25,6 +24,5 @@ public class BridgeEverydayDemo {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
 	}
 }

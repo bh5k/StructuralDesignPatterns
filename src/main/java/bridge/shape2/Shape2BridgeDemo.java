@@ -11,8 +11,16 @@ public class Shape2BridgeDemo {
 		
 		Shape circle = new Circle(red);
 
+		Color green = new Green();
+
+		Shape greenCircle = new Circle(green);
+
+		Shape greenSquare = new Square(green);
+
 		square.applyColor();
 		circle.applyColor();
+		greenCircle.applyColor();
+		greenSquare.applyColor();
 
 	}
 
