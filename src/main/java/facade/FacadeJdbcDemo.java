@@ -4,7 +4,7 @@ import java.util.List;
 
 public class FacadeJdbcDemo {
 
-	public static void main (String args []) {
+	public static void main (String[] args) {
 		
 		JdbcFacade jdbcFacade = new JdbcFacade();
 		
@@ -19,7 +19,7 @@ public class FacadeJdbcDemo {
 		List<Address> addresses = jdbcFacade.getAddresses();
 		
 		for (Address address : addresses) {
-			System.out.println(address.getId() + " " + address.getStreetName() + " " + address.getCity());
+			System.out.println(address.id() + " " + address.streetName() + " " + address.city());
 		}
 	}
 }
